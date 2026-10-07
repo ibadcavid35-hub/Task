@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Models;
 
-public class Course : Entity
+public class Course : IEntity
 {
     public string Name { get; set; }
 
@@ -15,4 +15,5 @@ public class Course : Entity
     public Teacher Teacher { get; set; }
 
     public ICollection<Student> Students { get; set; }
+    public int Id { get; set; }
 }

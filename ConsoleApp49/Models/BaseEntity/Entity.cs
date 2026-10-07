@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Models.BaseEntity;
 
-public class Entity
+public interface IEntity
 {
     public int Id { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public DateTime? ModifiedDate { get; set; }
-
-    protected Entity()
-    {
-        CreatedDate = DateTime.Now;
-    }
 }

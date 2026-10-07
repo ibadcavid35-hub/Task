@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Models;
 
-public class Teacher : Entity
+public class Teacher : IEntity
 {
+    public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
