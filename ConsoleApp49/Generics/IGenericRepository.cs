@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Generics;
 
-public interface IGenericRepossitory<T>
+public interface IGenericRepository<T>
 {
     Task<List<T>> GetAllAsync();
     Task<T> GetByIdAsync(int id);

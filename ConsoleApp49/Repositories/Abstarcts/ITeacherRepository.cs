@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Repositories.Abstarcts;
 
-public interface ITeacherRepository:IGenericRepossitory<Teacher>
+public interface ITeacherRepository:IGenericRepository<Teacher>
 {
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Generics;
 
-public class GenericRepository<T> : IGenericRepossitory<T> where T : class, IEntity
+public class GenericRepository<T> : IGenericRepository<T> where T : class, IEntity
 {
     protected readonly DbContext _context;
     protected readonly DbSet<T> _dbSet;

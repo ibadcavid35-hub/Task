@@ -1,4 +1,5 @@
-﻿using ConsoleApp49.Generics;
+﻿using ConsoleApp49.DTO;
+using ConsoleApp49.Generics;
 using ConsoleApp49.Models;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp49.Repositories.Abstarcts;
 
-public interface IStudentRepository:IGenericRepossitory<Student>
+public interface IStudentRepository:IGenericRepository<Student>
 {
+    Task<List<StudentWithFaculty>> getAllStudentsWithFacultyNameAsync();
 }

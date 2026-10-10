@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp49.DTO;
+
+public class StudentWithFaculty
+{
+    public string Firstname { get; set; }
+    public string Lastname { get; set; }
+    public string Facultyname { get; set; }
+}
